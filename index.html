@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Analisador Léxico</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/vendor.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/flat-admin.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <!-- Theme -->
+  <link rel="stylesheet" type="text/css" href="assets/css/theme/blue-sky.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/theme/blue.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/theme/red.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/theme/yellow.css">
+
+</head>
+<body>
+  <div class="app app-default">
+
+<div class="app-container">
+
+  <nav class="navbar navbar-default" id="navbar">
+  <div class="container-fluid">
+  <br>
+    <div class="navbar-collapse collapse in">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="navbar-title"><span class="highlight"> Linguagens Formais</span></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-left">
+		<li class="navbar-title"><span class="highlight">Analisador Lexico</span></li>
+
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <b>Elementos Básicos</b>
+        </div>
+        <div class="card-body body-wrapper">
+          <div class="col-md-6">
+            <div class="cleafix">
+              <div class="col-sm-9 padding-zero">
+                <div class="input-group">
+                  </span>
+                  <input id="input-insere" onkeypress="return lettersOnly(event);" type="text" class="form-control" placeholder="Inserir Token" value="">
+                </div>
+              </div>
+              <div class="col-sm-3 padding-zero align-center">
+                <button type="button" onclick="insereToken();">Inserir</button>
+              </div>
+            </div>
+            <table class="table card-table">
+              <thead>
+                
+              </thead>
+              <tbody id="table-tokens">
+              </tbody>
+            </table>
+          </div>
+
+          <div class="col-md-6">
+            <div class="cleafix">
+              <div class="col-sm-9 padding-zero">
+                <div id="box" class="input-group">
+                  <input type="text" id="buscar"  class="form-control" placeholder="Buscar Token" aria-describedby="basic-addon1" value="">
+                </div>
+              </div>
+              <div class="col-sm-3 padding-zero align-center">              
+                <button type="button" onClick="window.location.reload(true);" ">Limpar</button>
+              </div>
+            </div>
+            <table class="table card-table">
+              <thead>
+						
+              </thead>
+              <tbody id="table-search">
+              </tbody>
+            </table>
+          </div>
+
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <b>Tabela</b>
+        </div>
+        <div class="card-body">
+          <table id="automato" class="table table-striped table-bordered table-hover"></table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+  
+  <script type="text/javascript" src="assets/js/vendor.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+  <script type="text/javascript" src="assets/js/scripts.js"></script>
+
+</body>
+</html>
