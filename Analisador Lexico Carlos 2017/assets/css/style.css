@@ -1,0 +1,32 @@
+.body-wrapper{
+	padding: 30px 0;
+}
+.padding-zero{
+	padding: 0;
+}
+.align-center{
+	text-align: center;
+}
+#table-tokens .badge{
+	cursor: pointer;
+}
+.estado_selecionado td,
+.letra_selecionada{
+	background: rgba(17,163,247,0.1);
+}
+.estado_selecionado td.letra_selecionada{
+	color: #fff;
+	background: rgba(17,163,247,0.7);
+}
+#box.acerto,
+#box.acerto input{
+	border-color: #27ae60;
+	color: #27ae60;
+	background: rgba(39, 174, 96, 0.1);
+}
+#box.erro,
+#box.erro input{
+	border-color: #e74c3c;
+	color: #e74c3c;
+	background: rgba(231, 76, 60, 0.1);
+}
