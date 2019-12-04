@@ -2487,7 +2487,7 @@ a:hover {
     position: absolute; } }
 
 .navbar .navbar-header .navbar-brand .highlight, .navbar .navbar-mobile .navbar-brand .highlight {
-  background-color: #29c75f; }
+  background-color: #FFF; }
 
 .navbar.__inverse .navbar-header .navbar-brand, .navbar.__inverse .navbar-mobile .navbar-brand {
   color: #FFF; }

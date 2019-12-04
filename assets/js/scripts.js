@@ -8,7 +8,7 @@ function insereToken(){
 	var token = $("#input-insere").val();
 	if(token) { //Testa se tem algo escrito(válido)
 		if (Tokens.indexOf(token) < 0 && token.length > 0) { // fazer o teste se ja existe a palavra no dicionario
-			$("#table-tokens").append("<tr class=tk-"+token+"><td>"+token+"</td><td><span class='badge badge-danger badge-icon' onclick=\"removeToken('"+token+"')\"><i class='fa fa-times' aria-hidden='true'></i><span>Remover</span></span></td></tr>")
+			$("#table-tokens").append("<tr class=tk-"+token+"><td>"+token+"</td><td><span class='badge badge-danger badge-icon' onclick=\"removeToken('"+token+"')\"><i class='fa fa-times' aria-hidden='true'><span>remove</span></i></span></td></tr>")
 			Tokens.push(token);
 			$("#input-insere").val("");
 		}
@@ -179,12 +179,12 @@ function valida_palavra(event){
 		} else if(palavras[i] == ' '){ // Caso tenha digitado um espaço
 			if (letter_error == false) {
 				if (Tabela[estado]['final']) { //Se o estado for final da Encontrado se não da Estado não final
-					$("#table-search").append("<tr><td>"+palavras+"</td><td><span class='badge badge-success badge-icon'><i class='fa fa-check' aria-hidden='true'></i><span>Encontrada</span></span></td></tr>")
+					$("#table-search").append("<tr><td>"+palavras+"</td><td><span class='badge badge-success badge-icon'><i class='fa fa-check' aria-hidden='true'></i></span></td></tr>")
 				} else {
-					$("#table-search").append("<tr><td>"+palavras+"</td><td><span class='badge badge-warning badge-icon'><i class='fa fa-times' aria-hidden='true'></i><span>Estado não final</span></span></td></tr>")
+					$("#table-search").append("<tr><td>"+palavras+"</td><td><span class='badge badge-warning badge-icon'><i class='fa fa-times' aria-hidden='true'></i></span></td></tr>")
 				}
 			} else {
-				$("#table-search").append("<tr><td>"+palavras+"</td><td><span class='badge badge-danger badge-icon'><i class='fa fa-times' aria-hidden='true'></i><span>Não Encontrada</span></span></td></tr>")
+				$("#table-search").append("<tr><td>"+palavras+"</td><td><span class='badge badge-danger badge-icon'><i class='fa fa-times' aria-hidden='true'></i></span></td></tr>")
 			}
 			$('#box').removeClass('acerto');
 			$('#box').removeClass('erro');
